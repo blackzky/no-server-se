@@ -17,10 +17,10 @@ $(function(){
 });
 
 function setTileMapLayout(map){
-	var container  = $("#container"),
+	var container  = $("#game-canvas"),
 		mapHeight  = MAP.length,
 		mapWidth   = MAP[0].length;
-	
+
 	container.html(tileMapLayout(map));
 	container.css({
 		width : (TILE_SIZE * mapWidth) + "px",
@@ -47,7 +47,7 @@ function tileMapLayout(map){
 		tilemap += "<div class='row'>";
 		for(col in column){
 			tilemap +=  "<div class='column'>" +
-			"<div id='" + row + "-" + col + "' class='tile " + 
+			"<div id='" + row + "-" + col + "' class='tile " +
 			(map[row][col] == 1 ? 'grass' : '') + (map[row][col] == 2 ? 'ground' : '') +
 			"'></div></div>";
 		}

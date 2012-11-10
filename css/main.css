@@ -2,8 +2,9 @@ body, #container{
 	margin: 0;
 	padding: 0;
 }
-.block{
-	background: url(../images/demo.png) 96px 96px;
+#container{
+  width: 1024px;
+  height: 768px;
 }
 .ground{
 	background: url(../images/tilesetA.png) -32px 0px;
@@ -11,3 +12,75 @@ body, #container{
 .grass{
 	background: url(../images/tilesetA.png) 0px 0px;
 }
+.left{
+  float: left;
+}
+.horizontal-panel{
+  width: 100%;
+  height: 64px;
+}
+.navigation{
+  width: 64px;
+  height: 64px;
+}
+.horizontal-subpanel{
+  width: 416px;
+  height: 100%;
+}
+
+#nav-up-left{
+  background-image: url(../images/arrow-up-left-inactive.png);
+}
+#nav-bot-left{
+  background-image: url(../images/arrow-up-left-inactive.png);
+  transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  -webkit-transform: rotate(-90deg);
+  -o-transform: rotate(-90deg);
+  -moz-transform: rotate(-90deg);
+}
+#nav-up{
+  background-image: url(../images/arrow-up-inactive.png);
+}
+#nav-bot{
+  background-image: url(../images/arrow-up-inactive.png);
+  transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+}
+#nav-up-right{
+  background-image: url(../images/arrow-up-left-inactive.png);
+  transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+}
+#nav-bot-right{
+  background-image: url(../images/arrow-up-left-inactive.png);
+  transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+}
+
+/*for testing only */
+#top-panel{
+  background-color: #ddd;
+}
+#bot-panel{
+  background-color: #ccc;
+}
+#sub-up-lm, #sub-bot-lm{
+  background-color: #aaa;
+}
+#sub-up-lm, #sub-bot-lm{
+  background-color: #666;
+}
+#sub-up-mr, #sub-bot-mr{
+  background-color: #888;
+}
+
