@@ -14,33 +14,11 @@ var TILE_SIZE = 32;
 $(function(){
 	setTileMapLayout(MAP);
 	$(".tile").click(function(){console.log(this.id)});
+
+  setTimeout(function(){$("#loading").hide();}, 1000);
 });
 
 function setTileMapLayout(map){
-	var container  = $("#game-canvas"),
-		mapHeight  = MAP.length,
-		mapWidth   = MAP[0].length;
-
-	container.html(tileMapLayout(map));
-	container.css({
-		width : (TILE_SIZE * mapWidth) + "px",
-		height: (TILE_SIZE * mapHeight) + "px"
-	});
-	$(".row").css({
-		width : (TILE_SIZE * mapWidth) + "px",
-		height: TILE_SIZE + "px"
-	});
-	$(".column").css({
-		width  : TILE_SIZE + "px",
-		height : TILE_SIZE + "px",
-		"float": "left"
-	});
-	$(".tile").css({
-		width : TILE_SIZE + "px",
-		height: TILE_SIZE + "px"
-	});
-}
-function tileMapLayout(map){
 	var tilemap = "";
 	for(row in map){
 		column = map[row];
@@ -53,5 +31,5 @@ function tileMapLayout(map){
 		}
 		tilemap += "</div>";
 	}
-	return tilemap;
+	$("#game-canvas").html(tilemap);
 }

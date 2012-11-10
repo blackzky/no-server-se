@@ -5,7 +5,7 @@ body, #container{
 #container{
   width: 1024px;
   height: 768px;
-  margin: 0 auto;
+  margin: 1em auto;
 }
 .ground{
 	background: url(../images/tilesetA.png) -32px 0px;
@@ -16,6 +16,9 @@ body, #container{
 .left{
   float: left;
 }
+.right{
+  float: right;
+}
 .clear{
   clear: both;
 }
@@ -25,21 +28,45 @@ body, #container{
 }
 .vertical-panel{
   width: 64px;
-  height: 100%;
+  height: 640px;
 }
 .navigation{
   width: 64px;
   height: 64px;
 }
+.navigation:hover {
+  cursor: pointer;
+ }
 .horizontal-subpanel{
   width: 416px;
   height: 100%;
 }
 .vertical-subpanel{
   width: 64px;
-  height: 352px;
+  height: 288px;
 }
 #center-panel{
+  width: 896px;
+  height: 640px;
+}
+.quickslot-item{
+  width: 32px;
+  height: 32px;
+}
+.row{
+  width: 896px;
+  height: 32px;
+}
+.column{
+  width: 32px;
+  height: 100%;
+  float: left;
+}
+.tile{
+  width: 100%;
+  height: 100%;
+}
+#game-canvas{
   width: 896px;
   height: 640px;
 }
@@ -109,4 +136,15 @@ body, #container{
 }
 
 
-
+#loading{
+  width: 1024px;
+  height: 768px;
+  position: absolute;
+  z-index: 5;
+  background-color: beige;
+}
+#loading h1{
+  margin-top: 580px;
+  padding-right: 50px;
+  text-align: right;
+}
