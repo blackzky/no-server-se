@@ -15,7 +15,7 @@ $(function(){
 	setTileMapLayout(MAP);
 	$(".tile").click(function(){console.log(this.id)});
 
-  setTimeout(function(){$("#loading").hide();}, 1000);
+  setTimeout(function(){$("#loading").hide();}, 500);
 });
 
 function setTileMapLayout(map){
