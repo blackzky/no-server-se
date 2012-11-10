@@ -165,3 +165,48 @@ body{
 .skill-quick-slot-item span{
   padding-left: 3px;
 }
+
+.shortcut-dock{
+  background-image: url(../images/shortcut-dock.png);
+  background-repeat:no-repeat;
+  background-position:center 20px;
+  width: 352px;
+  height: 64px;
+  margin: 0 auto;
+  padding-left: 60px;
+}
+.shortcut-item{
+  width: 32px;
+  height: 32px;
+  float: left;
+  background-image: url(../images/quick-slot-item-container.png);
+  margin: 0 2px;
+}
+#sh-char{
+  background-image: url(../images/character.png);
+}
+#sh-stats{
+  background-image: url(../images/stats.png);
+}
+#sh-bag{
+  background-image: url(../images/bag.png);
+}
+#sh-skills{
+  background-image: url(../images/skills.png);
+}
+#sh-social{
+  background-image: url(../images/social.png);
+}
+#sh-quests{
+  background-image: url(../images/quest.png);
+}
+#sh-map{
+  background-image: url(../images/map.png);
+}
+#sh-options{
+  background-image: url(../images/options.png);
+}
+
+
+
+
