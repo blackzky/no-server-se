@@ -16,6 +16,25 @@ $(function(){
 	$(".tile").click(function(){console.log(this.id)});
 
   setTimeout(function(){$("#loading").hide();}, 500);
+
+  $("body").append("<div id='tooltip'></div>")
+  $("#tooltip").css({
+    width: "100px",
+    height: "100px",
+    position: "absolute",
+    "background-color" : "skyblue"
+  }).hide();
+
+  $(".skill-quick-slot-item").hover(function(e){
+    $("#tooltip").show();
+    var position = $(this).offset();
+    position.left = position.left - ( ($("#tooltip").width()/2) ) + ($(this).width()/2 );
+    position.top = position.top - ($("#tooltip").height() + 10);
+    $("#tooltip").css(position);
+  },function(){
+    $("#tooltip").hide();
+  });
+
 });
 
 function setTileMapLayout(map){
